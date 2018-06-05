@@ -193,7 +193,6 @@ function Game() {
     };
 
     this.moveFurry = function () {
-        this.showFurry();
 
         if (this.furry.direction === 'right') {
             this.furry.x = this.furry.x + 1;
@@ -205,9 +204,10 @@ function Game() {
             this.furry.y = this.furry.y - 1;
         }
 
-        this.gameOver();
-
-        this.checkCoinCollision();
+        if (this.gameOver()) {
+            this.checkCoinCollision();
+            this.showFurry();
+        }
     };
 
     this.turnFurry = function (event) {
@@ -246,15 +246,14 @@ function Game() {
             console.log('GAME OVER');
             clearInterval(this.IdSetInterval);
             this.hideVisibleFurry();
-            // var strong = document.querySelector("strong");
-            // console.log(strong);
-            // strong.innerText = "game over";
             var gameEnd = document.querySelector('#over');
             gameEnd.style.display = 'block';
             var yourScore = document.querySelector('.yourScore');
             console.log(yourScore);
             yourScore.innerText = this.score;
+            return false;
         }
+        return true;
     };
 
     this.startGame = function () {
