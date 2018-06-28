@@ -14,14 +14,14 @@ W każdym momencie gry, gracz musi widzieć ile monet już zebrał.
 
 ![Init furry](screens/init_furry.png)
 
-#### Wykorzystane technologie:
+Strona wykonana zaostała przy użyciu:
 * HTML,
 * CSS,
-* JS
+* JavaScript.
 
 
 Podczas tworzenia Furry Game poznałam technikę programowania obiektowego.
 
-Zobacz **Demo**: https://justyna1209.github.io/Furry-game/. 
+ **Zobacz jak działa:** https://justyna1209.github.io/Furry-game/. 
 
 
