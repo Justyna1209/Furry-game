@@ -20,6 +20,6 @@ CSS
 JS
 Podczas tworzenia Furry Game poznałam technikę programowania obiektowego.
 
-Zobacz Demo:
+Zobacz Demo: https://justyna1209.github.io/Furry-game/. 
 
 
